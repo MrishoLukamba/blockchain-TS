@@ -2,7 +2,7 @@ export{}
 import { Accounts } from "./account";
 import { account } from "./account";
 
-type Transaction = {
+export type Transaction = {
     sender:string;
     recipient:string;
     amount:number;
