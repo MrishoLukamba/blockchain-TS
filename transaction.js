@@ -31,10 +31,9 @@ const mrisho = new account_1.Accounts('mrisho', 100);
 const lukamba = new account_1.Accounts('lukamba', 200);
 const haji = new account_1.Accounts('haji', 250);
 const zaid = new account_1.Accounts('zaid', 20);
-console.log(mrisho.showAmount());
-console.log(zaid.showAmount());
 //transactions
 transact(mrisho, zaid, 10);
-console.log(mrisho.showAmount());
-console.log(zaid.showAmount());
-console.log(exports.Transactions);
+transact(lukamba, zaid, 50);
+transact(mrisho, haji, 30);
+transact(haji, zaid, 300);
+transact(lukamba, haji, 70);

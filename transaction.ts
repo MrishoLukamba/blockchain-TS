@@ -41,11 +41,12 @@ const lukamba = new Accounts('lukamba',200);
 const haji = new Accounts('haji',250);
 const zaid = new Accounts('zaid',20);
 
-console.log(mrisho.showAmount())
-console.log(zaid.showAmount())
+
 //transactions
 transact(mrisho,zaid,10);
-console.log(mrisho.showAmount())
-console.log(zaid.showAmount())
+transact(lukamba,zaid,50);
+transact(mrisho,haji,30);
+transact(haji,zaid,300);
+transact(lukamba,haji,70);
 
-console.log(Transactions)
+
